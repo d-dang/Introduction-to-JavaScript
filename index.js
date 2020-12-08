@@ -17,11 +17,11 @@ Do the following:
 
    HINT: no function required
 */
-// let votingAge = 18;
-// if (votingAge >= 18){
-//   console.log(votingAge);
-//   return true;
-// }
+
+let votingAge = 19;
+if (votingAge >= 18){
+  votingAge = true;
+}
 
 
 /*
@@ -34,12 +34,11 @@ Do the following:
 
    HINT: no function required
 */
-// let item1, item2 = 0,2;
-// if(item1 !== item2){
-//   item1=item2;
-//   console.log(item1);
-//   return item1;
-// }
+let item1 = 0;
+let item2 = 2;
+if(item1 !== item2){
+  item1=item2;
+}
 
 
 
@@ -55,10 +54,10 @@ Do the following:
    HINT: look up the Number method
 */
 
-// let yearStr = "1999";
-// let yearInt = parseInt(varStr);
-// console.log(yearInt);
-// return yearInt;
+var yearStr = "1999";
+function year(yearStr){
+  return parseInt(yearStr);
+}
 
 
 /*
@@ -73,6 +72,7 @@ Do the following:
 function multiply(a,b){
     return a*b;
   }
+console.log('task 1d', multiply(2,3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -85,13 +85,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-// function dogYears(age){
-//     return age*7;
-// }
-// console.log(dogYears(7));
-function dogYears(){
-  
+function dogYears(age){
+    return age*7;
 }
+console.log(dogYears(7));
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -120,27 +118,27 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-// function hungryDog(weight, age){
-//     if(age >= 1){
-//       if (weight >= 5){
-//         return weight * .05;
-//       }else if (weight >=6 && <= 10){
-//         return weight * .04;
-//       }else if (weight >=11 && weight <= 15){
-//         return weight * .03;
-//       }else{
-//         return weight * .02;
-//       }
-//     }else{
-//       if(age >= .16 && age < .333){
-//         return weight * .1;
-//       }else if (age > .33 && .58){
-//         return weight * .05;
-//       }else{
-//         return weight * .04;
-//       }
-//     }
-//   }
+function hungryDog(weight, age){
+    if(age >= 1){
+      if (weight >= 5){
+        return weight * .05;
+      }else if (weight >=6 && weight <= 10){
+        return weight * .04;
+      }else if (weight >=11 && weight <= 15){
+        return weight * .03;
+      }else{
+        return weight * .02;
+      }
+    }else{
+      if(age >= .16 && age < .333){
+        return weight * .1;
+      }else if (age > .33 && .58){
+        return weight * .05;
+      }else{
+        return weight * .04;
+      }
+    }
+  }
 
 
 
@@ -165,9 +163,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-// function game(user, computer){
-//     var choice = Math.random();
-// }
+function game(user, computer){
+    var choice = Math.random();
+}
   
   
 
@@ -232,21 +230,10 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(num){
-    if(num < 100 && num >= 90){
-      return 'you got an A';
-    }else if(num <90 && num >= 80){
-      return 'you got a B';
-    }else if(num < 80 && num >= 70){
-      return 'you got a C';
-    }else if(num < 70 && num >= 60){
-      return 'you got a D';
-    }else if(num < 60){
-      return 'you got an F';
-    }
+function grade(/*Your Code here */){
+  /*Your Code here */
   }
   
-  console.log('grade function', grade(85));
   
   
 
