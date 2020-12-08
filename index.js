@@ -72,7 +72,7 @@ Do the following:
 function multiply(a,b){
     return a*b;
   }
-console.log('task 1d', multiply(2,3));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -88,7 +88,7 @@ Do the following:
 function dogYears(age){
     return age*7;
 }
-console.log(dogYears(7));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
