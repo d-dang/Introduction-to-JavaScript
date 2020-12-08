@@ -120,19 +120,19 @@ Use the hungryDog function and feeding requirements below to do the following:
 
 function hungryDog(weight, age){
     if(age >= 1){
-      if (weight >= 5){
+      if (weight <= 5){
         return weight * .05;
-      }else if (weight >=6 && weight <= 10){
+      }else if (weight <= 10){
         return weight * .04;
-      }else if (weight >=11 && weight <= 15){
+      }else if (weight <= 15){
         return weight * .03;
       }else{
         return weight * .02;
       }
     }else{
-      if(age >= .16 && age < .333){
+      if(age >= .166 && age < .333){
         return weight * .1;
-      }else if (age > .33 && .58){
+      }else if (age >= .333 && age < .583){
         return weight * .05;
       }else{
         return weight * .04;
@@ -162,9 +162,22 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+var computer = Math.random();
 function game(user, computer){
-    var choice = Math.random();
+  if (computer < 0.333){
+    computer = 'scissors';
+  } else if (computer < 0.666){
+    computer = 'paper';
+  } else if (computer <= 1){
+    computer = 'rock';
+  }
+  if (user === computer){
+    return ('it\'s a tie');
+  } else if (user === 'scissors' && computer === 'paper' || user === 'paper' && computer === 'rock' || user === 'rock' && computer === 'scissors'){
+    return "you win!";
+  } else{
+    return "you lose!";
+  }
 }
   
   
@@ -176,12 +189,12 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    return km * 0.621371;
   }
 
 
@@ -194,8 +207,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
  
 
@@ -210,9 +223,15 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(num){
+  while(num > 0)
+    let numLeft = parseInt(num) - 1;
+    let numOrg = num;
+    num--;
+    return `${numOrg} bottles of soda on the wall, ${numOrg} bottles of soda, take one down pass it around ${numLeft} bottles on the wall`;
   }
+}
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
