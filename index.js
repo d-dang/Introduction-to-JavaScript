@@ -224,11 +224,11 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(num){
-  while(num > 0)
+  while(num > 0){
     let numLeft = parseInt(num) - 1;
     let numOrg = num;
     num--;
-    return `${numOrg} bottles of soda on the wall, ${numOrg} bottles of soda, take one down pass it around ${numLeft} bottles on the wall`;
+    return `${numOrg} bottles of soda on the wall, ${numOrg} bottles of soda, take one down pass it around ${numLeft} bottles of soda on the wall`;
   }
 }
 
@@ -249,9 +249,19 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score >= 90){
+    return 'you got an A';
+  } else if (score >= 80){
+    return 'you got a B';
+  } else if (score >= 70){
+    return 'you got a C';
+  } else if (score >= 60){
+    return 'you got a D';
+  }else{
+    return 'you got an F';
   }
+}
   
   
   
