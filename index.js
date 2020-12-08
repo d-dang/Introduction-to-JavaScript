@@ -17,7 +17,11 @@ Do the following:
 
    HINT: no function required
 */
-
+// let votingAge = 18;
+// if (votingAge >= 18){
+//   console.log(votingAge);
+//   return true;
+// }
 
 
 /*
@@ -30,7 +34,12 @@ Do the following:
 
    HINT: no function required
 */
-
+// let item1, item2 = 0,2;
+// if(item1 !== item2){
+//   item1=item2;
+//   console.log(item1);
+//   return item1;
+// }
 
 
 
@@ -46,7 +55,10 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+// let yearStr = "1999";
+// let yearInt = parseInt(varStr);
+// console.log(yearInt);
+// return yearInt;
 
 
 /*
@@ -58,10 +70,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    return a*b;
   }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,11 +85,13 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+// function dogYears(age){
+//     return age*7;
+// }
+// console.log(dogYears(7));
+function dogYears(){
+  
 }
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -107,9 +120,27 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+// function hungryDog(weight, age){
+//     if(age >= 1){
+//       if (weight >= 5){
+//         return weight * .05;
+//       }else if (weight >=6 && <= 10){
+//         return weight * .04;
+//       }else if (weight >=11 && weight <= 15){
+//         return weight * .03;
+//       }else{
+//         return weight * .02;
+//       }
+//     }else{
+//       if(age >= .16 && age < .333){
+//         return weight * .1;
+//       }else if (age > .33 && .58){
+//         return weight * .05;
+//       }else{
+//         return weight * .04;
+//       }
+//     }
+//   }
 
 
 
@@ -134,9 +165,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
-}
+// function game(user, computer){
+//     var choice = Math.random();
+// }
   
   
 
