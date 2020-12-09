@@ -172,7 +172,7 @@ function game(user, computer){
     computer = 'rock';
   }
   if (user === computer){
-    return ('it\'s a tie');
+    return ("it's a tie");
   } else if (user === 'scissors' && computer === 'paper' || user === 'paper' && computer === 'rock' || user === 'rock' && computer === 'scissors'){
     return "you win!";
   } else{
@@ -280,17 +280,17 @@ Using the vowelCounter function below do the following:
 
 
 function vowelCounter(string) {
-  string = string.toLowerCase();
+  let vowels = 'aeiouAEIOU';
+  let vowelCount = 0;
   for (let i = 0; i < string.length; i++){
-    vowelCount = 0;
-    if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] ==== 'o' || string[i] === 'u'){
+    if (vowels.indexOf(string[i])>= 0){
       vowelCount++;
     }
   }
   return vowelCount;
 }
 
-
+console.log(vowelCounter("There are vowels here"));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
